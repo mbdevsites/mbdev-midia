@@ -35,8 +35,18 @@ Fez o teste? Conte nos comentários se apareceu entre os primeiros.
 
 #googlemeunegocio #googlemaps #negociolocal #pequenosnegocios #marketingdigital #empreendedorismo
 
-## Quinta · Reel de bastidores · Como nasceu a MBDev
-Aguardando os clipes e as respostas da fundadora.
+## Quinta · Reel animado · Quem somos
+Arquivo: qui-reel.mp4 (capa: quadro em 2 s). Conteúdo baseado na página Quem Somos do site.
+
+Por trás de cada site, um jeito de trabalhar.
+
+Na MBDev, o objetivo é fazer a tecnologia e o design trabalharem a favor do seu negócio: sites rápidos, responsivos e fáceis de gerenciar, criados em etapas que você acompanha de perto.
+
+Atenção aos detalhes, comunicação transparente e compromisso com a qualidade. É isso que você pode esperar da gente. 🤝
+
+Quer conhecer melhor? Chame pelo link da bio.
+
+#criacaodesites #wordpress #webdesign #sitesprofissionais #empreendedorismo #pequenosnegocios
 
 ## Sexta · Carrossel · Quanto custa manter um site no ar?
 Arquivos: sex-01.png a sex-06.png

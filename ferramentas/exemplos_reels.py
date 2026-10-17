@@ -45,6 +45,27 @@ def reelS1b():
     body+=endcard(9.4,'Seu escritório também merece ser <span class="acc" style="color:#E9DCD8">encontrado.</span>')
     return page(body,kf+".stage{background:#080C14}"),12.5
 
+def reelS1d():
+    BG,FG,AC,SUB="#F5EFED","#080C14","#6D1220","#3A3C44"
+    def scene(t0,t1,inner,top=720):
+        out=(("fadeout",.4,t1),) if t1 else ()
+        return f'<div class="abs" style="left:90px;right:90px;top:{top}px;{A(("fade",.01,t0),*out)}">{inner}</div>'
+    def R(t,html,extra=""): return f'<div style="{A(("rise",.7,t))}{extra}">{html}</div>'
+    H=lambda sz: f"font-family:Outfit;font-weight:700;font-size:{sz}px;letter-spacing:-3px;line-height:1.04;color:{FG}"
+    P=f"font-family:Inter;font-size:40px;line-height:1.4;color:{SUB};margin-top:36px"
+    body=tag("BASTIDORES · QUEM SOMOS",AC)
+    body+=scene(0,3.1,R(.2,f'<div style="{H(150)}">Prazer,<br><span class="acc" style="color:{AC}">MBDev.</span></div>')+R(.8,"Criamos sites em WordPress para negócios que querem ser encontrados.",P))
+    body+=scene(3.5,7.0,R(3.6,f'<div class="tag" style="color:{AC}">NOSSO OBJETIVO</div>')+R(3.9,f'<div style="{H(100)};margin-top:30px">Fazer a tecnologia e o design trabalharem a favor do seu <span class="acc" style="color:{AC}">negócio.</span></div>'))
+    items="".join(R(7.8+i*.45,f'<div style="{H(110)};padding:18px 0;border-bottom:3px solid #D9C9C4">{w}</div>') for i,w in enumerate(["Rápidos.","Responsivos.","Fáceis de gerenciar."]))
+    body+=scene(7.4,11.4,R(7.5,f'<div class="tag" style="color:{AC}">SITES QUE SÃO</div>')+f'<div style="margin-top:20px">{items}</div>'+R(9.4,"Você atualiza textos e fotos sem precisar programar.",P),top=640)
+    steps=[("01","Entender o seu negócio"),("02","Planejar a estrutura"),("03","Design e desenvolvimento"),("04","Lançamento com SEO e orientação")]
+    st="".join(R(12.2+i*.5,f'<div style="display:flex;gap:30px;align-items:baseline;padding:26px 0;border-top:3px solid #D9C9C4"><span style="font-family:Outfit;font-weight:700;font-size:56px;color:{AC}">{n}</span><span style="font-family:Outfit;font-weight:600;font-size:56px;color:{FG}">{x}</span></div>') for i,(n,x) in enumerate(steps))
+    body+=scene(11.8,15.8,R(11.9,f'<div class="tag" style="color:{AC}">COMO TRABALHAMOS</div>')+f'<div style="margin-top:24px">{st}</div>'+R(14.2,"Você acompanha cada etapa e pode sugerir ajustes.",P),top=640)
+    vals="".join(R(16.4+i*.45,f'<div style="{H(96)};margin-bottom:22px">{v}</div>') for i,v in enumerate(['Atenção aos <span class="acc" style="color:#6D1220">detalhes.</span>','Comunicação <span class="acc" style="color:#6D1220">transparente.</span>','Compromisso com a <span class="acc" style="color:#6D1220">qualidade.</span>']))
+    body+=scene(16.2,None,vals,top=760)
+    body+=endcard(19.4,'Seu negócio merece ser <span class="acc" style="color:#E9DCD8">encontrado.</span>')
+    return page(body,f".stage{{background:{BG}}}"),22.5
+
 async def main(which):
     for name in which:
         html,dur=globals()["reel"+name]()
