@@ -1,7 +1,7 @@
 # Semana 1 · legendas
 
 ## Segunda · Carrossel · Já tenho Instagram, preciso de site?
-Arquivos: seg-01.png a seg-06.png
+Arquivos: seg-final-01.png a seg-final-06.png
 
 Já tenho Instagram. Preciso mesmo de site?
 
@@ -25,11 +25,11 @@ Advogado ou advogada? Seu próximo cliente também vai pesquisar antes de ligar.
 #advocacia #advogados #sitesparaadvogados #criacaodesites #sitesprofissionais #profissionaisliberais
 
 ## Quarta · Carrossel · Seu negócio aparece no Google Maps?
-Arquivos: qua-01.png a qua-05.png
+Arquivos: qua-final-01.png a qua-final-05.png
 
 Seu negócio aparece no Google Maps? 📍
 
-Faça estas 3 checagens hoje, direto do celular. Leva menos de 5 minutos e mostra o que o seu cliente vê quando procura por você.
+Faça estas 3 checagens hoje mesmo. Leva menos de 5 minutos e mostra o que o seu cliente vê quando procura por você.
 
 Fez o teste? Conte nos comentários se apareceu entre os primeiros.
 
@@ -49,7 +49,7 @@ Quer conhecer melhor? Chame pelo link da bio.
 #criacaodesites #wordpress #webdesign #sitesprofissionais #empreendedorismo #pequenosnegocios
 
 ## Sexta · Carrossel · Quanto custa manter um site no ar?
-Arquivos: sex-01.png a sex-06.png
+Arquivos: sex-final-01.png a sex-final-07.png
 
 Quanto custa manter um site no ar?
 
