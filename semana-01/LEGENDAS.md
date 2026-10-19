@@ -49,11 +49,11 @@ Quer conhecer melhor? Chame pelo link da bio.
 #criacaodesites #wordpress #webdesign #sitesprofissionais #empreendedorismo #pequenosnegocios
 
 ## Sexta · Carrossel · Quanto custa manter um site no ar?
-Arquivos: sex-final-01.png a sex-final-07.png
+Arquivos: sex-v3-01.png a sex-v3-08.png
 
 Quanto custa manter um site no ar?
 
-Depois que o site fica pronto, ainda existem alguns custos, e é melhor conhecer todos antes de começar. Domínio, hospedagem, manutenção e e-mail profissional, explicados sem letras miúdas.
+Depois que o site fica pronto, ainda existem alguns custos, e é melhor conhecer todos antes de começar. Domínio, hospedagem, manutenção, ferramentas adicionais e e-mail profissional, explicados sem letras miúdas.
 
 Salve para consultar quando for montar o seu. 💡
 
