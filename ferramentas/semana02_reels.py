@@ -36,7 +36,7 @@ def reelS2d():
     body+=scene(12.3,16.8,R(12.4,TAG("03 · TESTES"))+R(12.6,f'<div style="{H(92)};margin-top:26px">Reviso o layout em todos os <span class="acc" style="color:{AC}">dispositivos.</span></div>')+R(12.9,"Celular, tablet e computador: o site precisa ficar certo em todos.",P))
     body+=f'<div class="abs" style="inset:0;{A(("fade",.01,12.3),("fadeout",.4,16.8))}">{ph}</div>'
     CK=f'<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="28" fill="{AC}"/><path d="M16 29l8 8 16-17" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-    items="".join(R(17.8+i*.45,f'<div style="display:flex;align-items:center;gap:30px;padding:30px 0;border-top:3px solid {LN}">{CK}<span style="font-family:Outfit;font-weight:600;font-size:64px;color:{FG}">{x}</span></div>') for i,x in enumerate(["Velocidade","Botão do WhatsApp","Pronto para o Google"]))
+    items="".join(R(17.8+i*.45,f'<div style="display:flex;align-items:center;gap:30px;padding:30px 0;border-top:3px solid {LN}">{CK}<span style="font-family:Outfit;font-weight:600;font-size:64px;color:{FG}">{x}</span></div>') for i,x in enumerate(["Velocidade máxima","Links de conversão","Configuração de SEO","Certificado de segurança"]))
     body+=scene(17.1,21.0,R(17.2,TAG("04 · AJUSTES FINOS"))+R(17.4,f'<div style="{H(92)};margin-top:26px">Confiro cada <span class="acc" style="color:{AC}">detalhe.</span></div>')+f'<div style="margin-top:40px">{items}</div>',top=560)
     body+=scene(21.3,None,R(21.4,f'<div style="{H(150)}">E o site vai<br>ao <span class="acc" style="color:{AC}">ar.</span></div>'),top=760)
     body+=endcard(23.4,'O próximo site<br>pode ser o <span class="acc" style="color:#E9DCD8">seu.</span>')
