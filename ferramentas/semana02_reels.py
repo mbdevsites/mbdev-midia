@@ -30,7 +30,7 @@ def reelS2d():
         return f'<div style="margin-top:56px;width:640px;height:760px;background:#FFFFFF;border-radius:40px;padding:48px;display:flex;flex-direction:column;gap:34px;box-shadow:0 30px 70px rgba(8,12,20,.12)">{inner}</div>'
     body=tag("BASTIDORES · UM DIA DE TRABALHO",AC)
     body+=scene(0,3.0,R(.2,f'<div style="{H(130)}">Um dia criando<br>um <span class="acc" style="color:{AC}">site.</span></div>')+R(.8,"Do rascunho ao ar, em poucos passos.",P),top=720)
-    body+=scene(3.3,7.6,R(3.4,TAG("01 · NO PAPEL"))+R(3.6,f'<div style="{H(92)};margin-top:26px">Começa no <span class="acc" style="color:{AC}">rascunho.</span></div>')+R(3.9,"Antes de abrir o computador, desenho o que o seu cliente precisa ver primeiro.",P)+wire(4.4,False))
+    body+=scene(3.3,7.6,R(3.4,TAG("01 · NO PAPEL"))+R(3.6,f'<div style="{H(92)};margin-top:26px">Começa no <span class="acc" style="color:{AC}">rascunho.</span></div>')+R(3.9,"Antes de programar, eu projeto o layout completo da sua página. Cada bloco, seção e imagem é pensado estrategicamente para prender a atenção do visitante e gerar resultados.",P)+wire(4.4,False))
     body+=scene(7.9,12.0,R(8.0,TAG("02 · DESIGN"))+R(8.2,f'<div style="{H(92)};margin-top:26px">Depois, ganha <span class="acc" style="color:{AC}">cor.</span></div>')+R(8.5,"Fontes, cores e fotos que combinam com o seu negócio.",P)+wire(8.9,True))
     kf,ph=phone("pediatra",270,900,540,"#080C14",A(("rise",.9,12.9)),pan=(1.0,1.06,0,-7,13.6,3.2))
     body+=scene(12.3,16.8,R(12.4,TAG("03 · TESTES"))+R(12.6,f'<div style="{H(92)};margin-top:26px">Reviso o layout em todos os <span class="acc" style="color:{AC}">dispositivos.</span></div>')+R(12.9,"Celular, tablet e computador: o site precisa ficar certo em todos.",P))
