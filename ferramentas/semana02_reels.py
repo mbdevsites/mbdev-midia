@@ -32,8 +32,8 @@ def reelS2d():
     body+=scene(0,3.0,R(.2,f'<div style="{H(130)}">Um dia criando<br>um <span class="acc" style="color:{AC}">site.</span></div>')+R(.8,"Do rascunho ao ar, em poucos passos.",P),top=720)
     body+=scene(3.3,7.6,R(3.4,TAG("01 · NO PAPEL"))+R(3.6,f'<div style="{H(92)};margin-top:26px">Começa no <span class="acc" style="color:{AC}">rascunho.</span></div>')+R(3.9,"Antes de abrir o computador, desenho o que o seu cliente precisa ver primeiro.",P)+wire(4.4,False))
     body+=scene(7.9,12.0,R(8.0,TAG("02 · DESIGN"))+R(8.2,f'<div style="{H(92)};margin-top:26px">Depois, ganha <span class="acc" style="color:{AC}">cor.</span></div>')+R(8.5,"Fontes, cores e fotos que combinam com o seu negócio.",P)+wire(8.9,True))
-    kf,ph=phone("pediatra",270,840,540,"#080C14",A(("rise",.9,12.9)),pan=(1.0,1.06,0,-7,13.6,3.2))
-    body+=scene(12.3,16.8,R(12.4,TAG("03 · TESTES"))+R(12.6,f'<div style="{H(92)};margin-top:26px">Testo tudo no <span class="acc" style="color:{AC}">celular.</span></div>')+R(12.9,"É ali que o seu cliente vai abrir o site.",P))
+    kf,ph=phone("pediatra",270,900,540,"#080C14",A(("rise",.9,12.9)),pan=(1.0,1.06,0,-7,13.6,3.2))
+    body+=scene(12.3,16.8,R(12.4,TAG("03 · TESTES"))+R(12.6,f'<div style="{H(92)};margin-top:26px">Reviso o layout em todos os <span class="acc" style="color:{AC}">dispositivos.</span></div>')+R(12.9,"Celular, tablet e computador: o site precisa ficar certo em todos.",P))
     body+=f'<div class="abs" style="inset:0;{A(("fade",.01,12.3),("fadeout",.4,16.8))}">{ph}</div>'
     CK=f'<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="28" fill="{AC}"/><path d="M16 29l8 8 16-17" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
     items="".join(R(17.8+i*.45,f'<div style="display:flex;align-items:center;gap:30px;padding:30px 0;border-top:3px solid {LN}">{CK}<span style="font-family:Outfit;font-weight:600;font-size:64px;color:{FG}">{x}</span></div>') for i,x in enumerate(["Velocidade","Botão do WhatsApp","Pronto para o Google"]))
