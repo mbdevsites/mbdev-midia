@@ -102,7 +102,7 @@ def reelS3t():
     # 4: final B
     body+=scene(15.3,18.4,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(15.4,f'<div class="tag" style="color:#5A5C66">FINAL 2 · STUDIO AURORA</div>')+R(15.6,f'<div style="{H(120)};margin-top:30px">Nem ficou sabendo que a cliente {ACC("existiu.")}</div>')+R(16.1,"Ela voltou para a busca e escolheu outra.",P+";margin-top:36px")+'</div>')
     # 5: moral
-    body+=scene(18.7,None,f'<div class="abs" style="left:90px;right:90px;top:620px">'+R(18.8,f'<div style="{H(104)}">Ninguém escolhe o melhor. Escolhe quem {ACC("encontra")} e entende primeiro.</div>')+'</div>')
+    body+=scene(18.7,None,f'<div class="abs" style="left:90px;right:90px;top:620px">'+R(18.8,f'<div style="{H(104)}">Ser a melhor não basta. A cliente precisa te {ACC("encontrar")} para descobrir isso.</div>')+'</div>')
     body+=endcard(22.0,'Qual dos dois finais é o <span class="acc" style="color:#E9DCD8">seu?</span>',"Comente SITE · a gente te chama")
     return page(body,css),25.2
 
