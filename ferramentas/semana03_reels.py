@@ -63,6 +63,7 @@ def reelS3d():
         ("Meu negócio é pequeno. Vale a pena?",'O site faz seu negócio parecer <span class="acc" style="color:#6D1220">gigante.</span>',"Mesmo começando pequeno, um site profissional transmite a segurança e a credibilidade que o cliente precisa para escolher você, e não o concorrente.")]
     t=3.3; D=4.2
     for i,(q,a,sub) in enumerate(QA):
+        D=5.8 if i==len(QA)-1 else 4.2
         tq,tend=typed(t+.6,q)
         doc=f'<div style="font-family:Outfit;font-weight:600;font-size:22px;letter-spacing:4px;color:{BOR}">PERGUNTA {i+1} DE {len(QA)}</div><div style="font-family:Outfit;font-weight:700;font-size:56px;line-height:1.15;color:{PRE};margin-top:26px">{tq}</div>'
         ans=R(tend+.3,f'<div class="h" style="font-size:84px;color:{PRE}">{a}</div>')+R(tend+.6,sub,"font-family:Inter;font-size:40px;line-height:1.4;color:#3A3C44;margin-top:24px")
