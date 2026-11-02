@@ -58,9 +58,9 @@ def reelS3d():
     TAG=lambda x: f'<div class="tag" style="color:{BOR}">{x}</div>'
     body=tag("BASTIDORES · DÚVIDAS FREQUENTES",BOR)
     body+=scene(0,3.0,f'<div style="padding:0 90px">'+R(.2,f'<div class="h" style="font-size:118px;color:{PRE}">As dúvidas que eu mais <span class="acc" style="color:{BOR}">escuto.</span></div>')+R(.8,"Abri o computador e respondi uma por uma.",f"font-family:Inter;font-size:42px;line-height:1.4;color:#3A3C44;margin-top:34px")+'</div>',700)
-    QA=[("Vocês atendem na minha cidade?",'Atendo o Brasil <span class="acc" style="color:#6D1220">inteiro.</span>',"Tudo é feito online, do primeiro oi à entrega do site."),
-        ("Depois de pronto, consigo mexer sozinho?",'Consegue, <span class="acc" style="color:#6D1220">sim.</span>',"O site é feito em WordPress e você recebe orientação para trocar textos e fotos sem programar."),
-        ("E depois que o site vai ao ar?",'Eu continuo por <span class="acc" style="color:#6D1220">perto.</span>',"O suporte segue depois da entrega. Você não fica sozinho com o site.")]
+    QA=[("Preciso ter logo, textos e fotos?",'Não precisa estar tudo <span class="acc" style="color:#6D1220">pronto.</span>',"Eu ajudo a escrever os textos e a escolher as imagens do site."),
+        ("Já tenho um site. Dá para refazer?",'Dá, <span class="acc" style="color:#6D1220">sim.</span>',"Dependendo do caso, eu ajusto o site atual ou crio um novo."),
+        ("Meu negócio é pequeno. Vale a pena?",'O tamanho não <span class="acc" style="color:#6D1220">importa.</span>',"Antes de comprar, o cliente pesquisa. E ele pesquisa negócios de todos os tamanhos.")]
     t=3.3; D=4.2
     for i,(q,a,sub) in enumerate(QA):
         tq,tend=typed(t+.6,q)
