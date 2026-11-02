@@ -73,7 +73,7 @@ def reelS3d():
     return page(body,css),t+5.8
 
 def reelS3t():
-    """Com site x sem site: a mesma busca, dois finais. Simulação com dois negócios fictícios."""
+    """Com site x sem site: a mesma busca, dois finais. Simulação com duas clínicas de estética fictícias."""
     css=f".stage{{background:{BEC}}}@keyframes blink{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}"
     def scene(t0,t1,inner):
         out=(("fadeout",.35,t1),) if t1 else ()
@@ -85,24 +85,24 @@ def reelS3t():
     LUPA='<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="17" cy="17" r="11" fill="none" stroke="#5A5C66" stroke-width="4"/><path d="M26 26l9 9" stroke="#5A5C66" stroke-width="4" stroke-linecap="round"/></svg>'
     def typed(t,text,step=.07):
         return "".join(f'<span style="{A(("fade",.03,t+i*step))}">{c}</span>' for i,c in enumerate(text))
-    q="confeitaria perto de mim"
+    q="clínica de estética perto de mim"
     body=tag("COM SITE X SEM SITE · SIMULAÇÃO",BOR)
     # 0: gancho
-    body+=scene(0,3.0,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(.15,f'<div style="{H(150)}">Mesma busca.<br>Dois {ACC("finais.")}</div>')+R(.8,"Duas confeitarias boas. O cliente só vai conhecer uma.",P+";margin-top:40px")+'</div>')
+    body+=scene(0,3.0,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(.15,f'<div style="{H(150)}">Mesma busca.<br>Dois {ACC("finais.")}</div>')+R(.8,"Duas clínicas boas. A cliente só vai conhecer uma.",P+";margin-top:40px")+'</div>')
     # 1: busca
     bar=f'<div style="background:#fff;border-radius:999px;padding:34px 44px;display:flex;align-items:center;gap:26px;box-shadow:0 24px 60px rgba(8,12,20,.12);font-family:Inter;font-size:46px;color:{PRE}">{LUPA}<span>{typed(3.7,q)}</span><span style="display:inline-block;width:4px;height:52px;background:{BOR};animation:blink 1s steps(1) infinite"></span></div>'
-    body+=scene(3.3,6.3,f'<div class="abs" style="left:90px;right:90px;top:560px">'+R(3.35,f'<div class="tag" style="color:{BOR}">SÁBADO, 10H. UM CLIENTE PROCURA:</div>')+R(3.5,bar,"margin-top:40px")+'</div>')
+    body+=scene(3.3,6.3,f'<div class="abs" style="left:90px;right:90px;top:560px">'+R(3.35,f'<div class="tag" style="color:{BOR}">TERÇA, 19H. UMA CLIENTE PROCURA:</div>')+R(3.5,bar,"margin-top:40px")+'</div>')
     # 2: dois resultados
     def card(t,name,lines,ok):
         rows="".join(f'<div style="display:flex;gap:18px;align-items:center;font-family:Inter;font-size:34px;color:{"#1F6B3A" if ok else "#8A2A2A"}"><span style="font-family:Outfit;font-weight:700;width:34px">{"✓" if ok else "✕"}</span><span style="color:{PRE}">{x}</span></div>' for x in lines)
         return R(t,f'<div style="background:#fff;border-radius:36px;padding:44px 48px;border:3px solid {BOR if ok else LN};display:flex;flex-direction:column;gap:18px"><div style="font-family:Outfit;font-weight:700;font-size:56px;color:{PRE}">{name}</div>{rows}</div>')
-    body+=scene(6.6,11.6,f'<div class="abs" style="left:90px;right:90px;top:540px;display:flex;flex-direction:column;gap:40px">'+card(6.8,"Doces da Ana",["Site com cardápio e preços","Horário e endereço certos","Encomenda pelo WhatsApp"],True)+card(7.6,"Confeitaria Bela",["Sem site: nada de cardápio","Horário? Ninguém sabe","Nenhum jeito rápido de pedir"],False)+'</div>')
+    body+=scene(6.6,11.6,f'<div class="abs" style="left:90px;right:90px;top:540px;display:flex;flex-direction:column;gap:40px">'+card(6.8,"Clínica Lumi",["Site com os tratamentos explicados","Avaliações de clientes","Agendamento online em um toque"],True)+card(7.6,"Studio Aurora",["Sem site: tratamentos? Só perguntando","Horário? Ninguém sabe","Para marcar, só esperando resposta"],False)+'</div>')
     # 3: final A
-    body+=scene(11.9,15.0,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(12.0,f'<div class="tag" style="color:{BOR}">FINAL 1 · DOCES DA ANA</div>')+R(12.2,f'<div style="{H(120)};margin-top:30px">Viu, entendeu e {ACC("encomendou.")}</div>')+R(12.7,"Em menos de 2 minutos, pelo celular.",P+";margin-top:36px")+'</div>')
+    body+=scene(11.9,15.0,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(12.0,f'<div class="tag" style="color:{BOR}">FINAL 1 · CLÍNICA LUMI</div>')+R(12.2,f'<div style="{H(120)};margin-top:30px">Viu, confiou e {ACC("agendou.")}</div>')+R(12.7,"Em menos de 2 minutos, pelo celular.",P+";margin-top:36px")+'</div>')
     # 4: final B
-    body+=scene(15.3,18.4,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(15.4,f'<div class="tag" style="color:#5A5C66">FINAL 2 · CONFEITARIA BELA</div>')+R(15.6,f'<div style="{H(120)};margin-top:30px">Nem ficou sabendo que o cliente {ACC("existiu.")}</div>')+R(16.1,"Ele voltou para a busca e escolheu outra.",P+";margin-top:36px")+'</div>')
+    body+=scene(15.3,18.4,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(15.4,f'<div class="tag" style="color:#5A5C66">FINAL 2 · STUDIO AURORA</div>')+R(15.6,f'<div style="{H(120)};margin-top:30px">Nem ficou sabendo que a cliente {ACC("existiu.")}</div>')+R(16.1,"Ela voltou para a busca e escolheu outra.",P+";margin-top:36px")+'</div>')
     # 5: moral
-    body+=scene(18.7,None,f'<div class="abs" style="left:90px;right:90px;top:620px">'+R(18.8,f'<div style="{H(104)}">O cliente não escolhe o melhor. Escolhe quem ele {ACC("encontra")} e entende primeiro.</div>')+'</div>')
+    body+=scene(18.7,None,f'<div class="abs" style="left:90px;right:90px;top:620px">'+R(18.8,f'<div style="{H(104)}">Ninguém escolhe o melhor. Escolhe quem {ACC("encontra")} e entende primeiro.</div>')+'</div>')
     body+=endcard(22.0,'Qual dos dois finais é o <span class="acc" style="color:#E9DCD8">seu?</span>',"Comente SITE · a gente te chama")
     return page(body,css),25.2
 
