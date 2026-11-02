@@ -98,7 +98,7 @@ def reelS3t():
         return R(t,f'<div style="background:#fff;border-radius:36px;padding:44px 48px;border:3px solid {BOR if ok else LN};display:flex;flex-direction:column;gap:18px"><div style="font-family:Outfit;font-weight:700;font-size:56px;color:{PRE}">{name}</div>{rows}</div>')
     body+=scene(6.6,11.6,f'<div class="abs" style="left:90px;right:90px;top:540px;display:flex;flex-direction:column;gap:40px">'+card(6.8,"Clínica Lumi",["Site com os tratamentos explicados","Avaliações de clientes","Agendamento online em um toque"],True)+card(7.6,"Studio Aurora",["Sem site: tratamentos? Só perguntando","Horário? Ninguém sabe","Para marcar, só esperando resposta"],False)+'</div>')
     # 3: final A
-    body+=scene(11.9,15.0,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(12.0,f'<div class="tag" style="color:{BOR}">FINAL 1 · CLÍNICA LUMI</div>')+R(12.2,f'<div style="{H(120)};margin-top:30px">Viu, confiou e {ACC("agendou.")}</div>')+R(12.7,"Em menos de 2 minutos, pelo celular.",P+";margin-top:36px")+'</div>')
+    body+=scene(11.9,15.0,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(12.0,f'<div class="tag" style="color:{BOR}">FINAL 1 · CLÍNICA LUMI</div>')+R(12.2,f'<div style="{H(120)};margin-top:30px">Viu, confiou e {ACC("agendou.")}</div>')+R(12.7,"Em menos de 2 minutos.",P+";margin-top:36px")+'</div>')
     # 4: final B
     body+=scene(15.3,18.4,f'<div class="abs" style="left:90px;right:90px;top:640px">'+R(15.4,f'<div class="tag" style="color:#5A5C66">FINAL 2 · STUDIO AURORA</div>')+R(15.6,f'<div style="{H(120)};margin-top:30px">Nem ficou sabendo que a cliente {ACC("existiu.")}</div>')+R(16.1,"Ela voltou para a busca e escolheu outra.",P+";margin-top:36px")+'</div>')
     # 5: moral
