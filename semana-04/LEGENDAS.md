@@ -1,7 +1,7 @@
 # Semana 4 · legendas (09 a 13/11, 19h)
 
-## Segunda · Carrossel · Fez o próprio site e vive consertando bug?
-Arquivos: seg-01-1.png a seg-01-7.png
+## Segunda · Reel animado · Fez o próprio site e vive consertando bug?
+Arquivo: seg-reel-01.mp4 (capa: quadro em 2,5 s). Substituiu o carrossel seg-01-1.png a seg-01-7.png, que fica guardado para outra semana com a mesma legenda.
 
 Fez o próprio site para economizar e agora vive consertando bug? 😮‍💨
 
